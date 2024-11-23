@@ -1,0 +1,768 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* ===== Colors ===== */
+    --primary-color: #00a1ff;
+    --panel-color: #FFF;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toggle-color: #DDD;
+    --box1-color: #4DA3FF;
+    --box2-color: #FFE6AC;
+    --box3-color: #E7D1FC;
+    --title-icon-color: #fff;
+
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.wrapper {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+}
+
+.wrapper header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+.latest-info {
+    color: rgba(135, 133, 133, 0.836); /* ทำให้ข้อความมีลักษณะเป็นตัวจาง */
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.latest-info-d{
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางตามแนวตั้ง */
+    color: rgba(135, 133, 133, 0.836); /* ทำให้ข้อความมีลักษณะเป็นตัวจาง */
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.latest-info-h{
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางตามแนวตั้ง */
+    color: rgba(135, 133, 133, 0.836); /* ทำให้ข้อความมีลักษณะเป็นตัวจาง */
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.latest-info-t{
+    display: flex;
+    justify-content: right; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+    align-items: right; /* จัดให้อยู่ตรงกลางตามแนวตั้ง */
+    color: rgba(135, 133, 133, 0.836); /* ทำให้ข้อความมีลักษณะเป็นตัวจาง */
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+.username{
+    font-size: 20px;
+    font-weight: bold;
+}
+.latest-info-s{
+    display: flex;
+    justify-content: left; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+    align-items: left; /* จัดให้อยู่ตรงกลางตามแนวตั้ง */
+    color: rgba(135, 133, 133, 0.836); /* ทำให้ข้อความมีลักษณะเป็นตัวจาง */
+    margin-bottom: 28px;
+    margin-left: 22px;
+    font-size: 12px;
+}
+.latest-info-task{
+    display: flex;
+    justify-content: left; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+    align-items: left; /* จัดให้อยู่ตรงกลางตามแนวตั้ง */
+    color: rgba(48, 48, 48, 0.836); /* ทำให้ข้อความมีลักษณะเป็นตัวจาง */
+
+    font-size: 12px;
+}
+.task-item {
+    text-align: right;
+}
+
+header .icons {
+    display: flex;
+}
+.arrow {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางตามแนวตั้ง */
+    /* คุณสามารถเพิ่ม properties อื่น ๆ ตามต้องการ */
+}
+.arrow p {
+    height: 38px;
+    width: 38px;
+    margin: 0 5px;
+    color: #000000;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    -webkit-user-select: none;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.arrow span {
+    height: 38px;
+    width: 38px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    -webkit-user-select: none;
+    border-radius: 50%;
+}
+.arrow span:hover {
+    background: #f2f2f2;
+}
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    -webkit-user-select: none;
+    border-radius: 50%;
+}
+
+.icons span:last-child {
+    margin-right: -10px;
+}
+
+header .icons span:hover {
+    background: #f2f2f2;
+}
+
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+header .text {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+::selection {
+    color: #fff;
+    background: #3C87FF;
+}
+
+.taskwrapper {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    margin-left: 15px;
+    /* Adjust based on your layout */
+}
+
+.controls {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    /* Aligns children on both ends */
+    align-items: center;
+    /* Vertical alignment */
+    padding: 12px 15px;
+    /* Padding around controls */
+}
+/* .text{
+    font-size: 24px;
+    font-weight: bold;
+} */
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0; /* เพิ่มขอบรอบๆ ปุ่ม */
+}
+
+.filter-btn {
+    padding: 10px 20px; /* ปรับขนาดให้กับปุ่ม */
+    font-size: 14px; /* ขนาดตัวอักษรของปุ่ม */
+    color: #555; /* สีตัวอักษร */
+    background-color: none; /* สีพื้นหลังของปุ่ม */
+    outline: none;
+    border-radius: 20px; /* รัศมีขอบมนของปุ่ม */
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s; /* สร้างเอฟเฟกต์การเปลี่ยนแปลง */
+}
+
+.filter-btn:hover {
+    background-color: #e7e7e7; /* สีพื้นหลังเมื่อชี้ */
+}
+
+.filter-btn:active, .filter-btn.active {
+    color: #fff; /* สีตัวอักษรเมื่อกด */
+    background-color: #00a1ff; /* สีพื้นหลังเมื่อกด */
+    border-color: #00a1ff; /* เส้นขอบเมื่อกด */
+}
+
+.filter-btn:focus {
+    outline: none; /* ลบเส้นขอบเมื่อโฟกัส */
+}
+.filter-btn-detail{
+    padding: 10px 20px; /* ปรับขนาดให้กับปุ่ม */
+    font-size: 14px; /* ขนาดตัวอักษรของปุ่ม */
+    color: #555; /* สีตัวอักษร */
+    background-color: #e6e6e6; /* สีพื้นหลังของปุ่ม */
+    outline: none;
+    border-radius: 20px; /* รัศมีขอบมนของปุ่ม */
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s; /* สร้างเอฟเฟกต์การเปลี่ยนแปลง */
+}
+.filter-btn-detail:hover {
+    background-color: #e7e7e7; /* สีพื้นหลังเมื่อชี้ */
+}
+
+.filter-btn-detail:active, .filter-btn-detail.active {
+    color: #fff; /* สีตัวอักษรเมื่อกด */
+    background-color: #00a1ff; /* สีพื้นหลังเมื่อกด */
+    border-color: #00a1ff; /* เส้นขอบเมื่อกด */
+}
+
+.filter-btn-detail:focus {
+    outline: none; /* ลบเส้นขอบเมื่อโฟกัส */
+}
+
+.filter-buttons-detail {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางตามแนวตั้ง */
+}
+
+.controls,
+.filters,
+.task-box {
+    margin-top: 10px;
+}
+
+.clear-btn {
+    float: right;
+    /* Makes the button align to the right */
+}
+
+.controls .clear-btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 7px 13px;
+    border-radius: 4px;
+    letter-spacing: 0.3px;
+    pointer-events: none;
+    transition: transform 0.25s ease;
+    background: #00a1ff;
+}
+
+.clear-btn.active {
+    opacity: 0.9;
+    pointer-events: auto;
+}
+
+.clear-btn:active {
+    transform: scale(0.93);
+}
+.task-box {
+    list-style-type: none; /* เอาไลน์รายการออก */
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    padding: 0 20px 10px 5px;
+}
+.task-box li {
+    border-bottom: 1.8px solid #ddddddb1; /* เพิ่มเส้นคั่นระหว่างรายการ */
+    padding: 9.5px; /* กำหนดระยะห่างของรายการ */
+    width: 105%; /* ปรับความยาวของเส้นคั่น */
+
+}
+
+.task-box li:last-child {
+    border-bottom: none; /* ลบเส้นคั่นในรายการสุดท้าย */
+}
+
+
+.task-box.overflow {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.task-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.task-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+.task-box::-webkit-scrollbar-thumb {
+    background: #e6e6e6;
+    border-radius: 25px;
+}
+
+.task-box .task {
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    align-items: flex-start;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-box .task:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.task-box .task label {
+    display: flex;
+    align-items: flex-start;
+}
+
+.task-box .settings {
+    position: relative;
+}
+
+.settings :where(i, li) {
+    cursor: pointer;
+}
+.task label input {
+    margin-top: 7px;
+    accent-color: #3C87FF;
+}
+
+.task label p {
+    -webkit-user-select: none;
+    margin-left: 12px;
+    word-wrap: break-word;
+}
+
+.task label p.checked {
+    text-decoration: line-through;
+}
+
+
+
+.settings .task-menu {
+    z-index: 10;
+    right: -5px;
+    bottom: -65px;
+    padding: 5px 0;
+    background: #fff;
+    position: absolute;
+    border-radius: 4px;
+    transform: scale(0);
+    transform-origin: top right;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.task-box .task:last-child .task-menu {
+    bottom: 0;
+    transform-origin: bottom right;
+}
+
+.task-box .task:first-child .task-menu {
+    bottom: -65px;
+    transform-origin: top right;
+}
+
+.task-menu.show {
+    transform: scale(1);
+}
+
+.task-menu li {
+    height: 25px;
+    font-size: 16px;
+    margin-bottom: 2px;
+    padding: 17px 15px;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+
+.task-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.settings li:hover {
+    background: #f5f5f5;
+}
+
+.settings li i {
+    padding-right: 8px;
+}
+
+
+/* @media (max-width: 400px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .wrapper {
+        padding: 20px 0;
+    }
+
+    .filters span {
+        margin: 0 5px;
+    }
+
+    .task-input {
+        padding: 0 20px;
+    }
+
+    .controls {
+        padding: 18px 20px;
+    }
+
+    .task-box {
+        margin-top: 20px;
+        margin-right: 5px;
+        padding: 0 15px 10px 20px;
+    }
+
+    .task label input {
+        margin-top: 4px;
+    }
+} */
+
+/* === Custom Scroll Bar CSS === */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0b3cc1;
+}
+
+body.dark::-webkit-scrollbar-thumb:hover,
+body.dark .activity-data::-webkit-scrollbar-thumb:hover {
+    background: #3A3B3C;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background-color: var(--panel-color);
+    border-right: 1px solid var(--border-color);
+    transition: var(--tran-05);
+}
+
+nav.close {
+    width: 73px;
+}
+
+nav .logo-name {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-image {
+    display: flex;
+    justify-content: center;
+    min-width: 45px;
+}
+
+nav .logo-image img {
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+nav .logo-name .logo_name {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 14px;
+    transition: var(--tran-05);
+}
+
+nav .menu-items {
+    margin-top: 30px;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-items li {
+    list-style: none;
+}
+
+.menu-items li a {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-links li a:hover:before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+
+.menu-items li a i {
+    font-size: 24px;
+    min-width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-light-color);
+}
+
+.menu-items li a .link-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-light-color);
+}
+
+.nav-links li a:hover i,
+.nav-links li a:hover .link-name {
+    color: var(--primary-color);
+}
+
+
+.menu-items .logout-mode {
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+.menu-items .mode {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.menu-items .mode-toggle {
+    position: absolute;
+    right: 14px;
+    height: 50px;
+    min-width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav.close~.dashboard {
+    left: 73px;
+    width: calc(100% - 73px);
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    display: flex;
+    width: calc(100% - 250px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: var(--panel-color);
+    transition: var(--tran-05);
+    z-index: 10;
+}
+
+nav.close~.top {
+    left: 73px;
+    width: calc(100% - 73px);
+}
+
+.top .sidebar-toggle {
+    font-size: 26px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.top img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.dashboard {
+    position: relative;
+    left: 250px;
+    background-color: var(--panel-color);
+    min-height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    transition: var(--tran-05);
+}
+.dashboard .dash-content {
+    padding-top: 50px;
+}
+
+.dash-content .title {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 10px 0;
+}
+
+.dash-content .title i {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    color: var(--title-icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.dash-content .title .text {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 10px;
+}
+
+.dash-content .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dash-content .boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: calc(100% / 3 - 15px);
+    padding: 15px 20px;
+    background-color: var(--box1-color);
+    transition: var(--tran-05);
+}
+
+.boxes .box i {
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+.boxes .box .text {
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.boxes .box .number {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.boxes .box.box2 {
+    background-color: var(--box2-color);
+}
+
+.boxes .box.box3 {
+    background-color: var(--box3-color);
+}
+
+.dash-content .activity .activity-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.activity .activity-data {
+    display: flex;
+}
+
+.activity-data .data {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.activity-data .data-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.activity-data .data .data-list {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    white-space: nowrap;
+    color: var(--text-color);
+}
+
+.profile-area {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.notification-icon {
+    font-size: 25px;
+    color: var(--text-color);
+    position: absolute;
+    right: 55px;
+    /* Adjust based on your layout */
+    cursor: pointer;
+}
+
+.profile-area img {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+

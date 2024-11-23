@@ -1,0 +1,127 @@
+.textt{
+    font-size: 22px;
+}
+/* เพิ่ม CSS สำหรับปุ่มที่ไม่สามารถใช้งานได้ */
+.disabled {
+    pointer-events: none; /* ปิดการใช้งาน pointer events */
+    opacity: 0.5; /* ปรับความโปร่งใสลงเพื่อแสดงสถานะที่ปิดใช้งาน */
+    cursor: not-allowed; /* เปลี่ยน cursor เป็น not-allowed เมื่อไม่สามารถใช้งานได้ */
+}
+.icon-large {
+    font-size: 24px; /* ปรับขนาดไอคอนใหญ่ขึ้น */
+    
+}
+
+/* ลองปรับขนาดข้อความให้เหมือนขนาดไอคอน */
+.showNum {
+    font-size: 24px;
+}
+
+/* เราสามารถเพิ่ม transition เพื่อให้การเปลี่ยนขนาดของไอคอนดูนุ่มนวลขึ้น */
+/* ให้ปุ่มเป็นวงกลม */
+.arrow button {
+    border-radius: 100%; /* ทำให้มุมของปุ่มเป็นวงกลม */
+    border: none; /* ลบเส้นขอบ */
+    background-color: #ffffff; /* กำหนดสีพื้นหลัง */
+    width: 35px;
+}
+
+.arrow button:after {
+   outline: none;
+}
+.arrow button:hover {
+    outline: none;
+    background-color: rgb(228, 228, 228);
+
+ }
+.arrow button:focus {
+    outline: none;
+    background-color: rgb(228, 228, 228);
+ }
+ 
+ /* ให้ปุ่มเป็นวงกลม */
+ .arrow-h button {
+    border-radius: 100%; /* ทำให้มุมของปุ่มเป็นวงกลม */
+    border: none; /* ลบเส้นขอบ */
+    background-color: #ffffff; /* กำหนดสีพื้นหลัง */
+    width: 35px;
+}
+
+.arrow-h button:after {
+   outline: none;
+}
+.arrow-h button:hover {
+    outline: none;
+    background-color: rgb(228, 228, 228);
+
+ }
+.arrow-h button:focus {
+    outline: none;
+    background-color: rgb(228, 228, 228);
+ }
+ 
+ .arrow-h {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางตามแนวตั้ง */
+    /* คุณสามารถเพิ่ม properties อื่น ๆ ตามต้องการ */
+}
+.arrow-h p {
+    height: 38px;
+    width: 38px;
+    margin: 0 5px;
+    color: #000000;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    -webkit-user-select: none;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.arrow-h span {
+    height: 38px;
+    width: 38px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    -webkit-user-select: none;
+    border-radius: 50%;
+}
+.arrow-h span:hover {
+    background: #f2f2f2;
+}
+
+ .input-search{
+    border-radius: 6px; /* ทำให้มุมของปุ่มเป็นวงกลม */
+
+ }
+ 
+ .gold-star {
+    color: gold; /* กำหนดสีเป็นสีทอง */
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.gray-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* ทำให้มีรูปร่างเป็นวงกลม */
+    background-color: rgb(207, 207, 207); /* กำหนดสีเทา */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.col-margin{
+    margin-top: 8px;
+}
+label.col-margin{
+    margin-bottom: 0;
+}
+.be {
+    margin-top: 10px;
+}

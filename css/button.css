@@ -1,0 +1,334 @@
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    /* จัดตำแหน่งปุ่มให้อยู่ตรงกลางแนวนอน */
+    gap: 5px;
+}
+
+.btn-add,
+.btn-check,
+.btn-cancle,
+.btn-edit,
+.btn-delete,
+.btn-detail {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-edit {
+    border-radius: 6px;
+    /* กำหนดความโค้งมนของขอบ */
+    background-color: #ffd000;
+    /* Blue background for edit button */
+    color: white;
+    /* สีของข้อความและไอคอน */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    padding: 0;
+    /* ไม่มีการเพิ่มระยะขอบภายใน */
+    width: 35px;
+    /* กว้าง */
+    height: 35px;
+    /* สูง */
+    display: flex;
+    /* ใช้ flexbox ในการจัดตำแหน่งเนื้อหา */
+    align-items: center;
+    /* จัดให้อยู่กลางแนวตั้ง */
+    justify-content: center;
+    /* จัดให้อยู่กลางแนวนอน */
+    cursor: pointer;
+    /* ทำให้เมื่อเอาเมาส์ไปวางจะเปลี่ยนรูปร่างเป็นมือชี้ */
+}
+
+.btn-delete {
+    border-radius: 6px;
+    /* กำหนดความโค้งมนของขอบ */
+    background-color: red;
+    /* สีพื้นหลังของปุ่ม */
+    color: white;
+    /* สีของข้อความและไอคอน */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    padding: 0;
+    /* ไม่มีการเพิ่มระยะขอบภายใน */
+    width: 35px;
+    /* กว้าง */
+    height: 35px;
+    /* สูง */
+    display: flex;
+    /* ใช้ flexbox ในการจัดตำแหน่งเนื้อหา */
+    align-items: center;
+    /* จัดให้อยู่กลางแนวตั้ง */
+    justify-content: center;
+    /* จัดให้อยู่กลางแนวนอน */
+    cursor: pointer;
+    /* ทำให้เมื่อเอาเมาส์ไปวางจะเปลี่ยนรูปร่างเป็นมือชี้ */
+
+}
+
+.btn-detail {
+    border-radius: 6px;
+    /* กำหนดความโค้งมนของขอบ */
+    background-color: #15adc5;
+    /* สีฟ้าอ่อนสำหรับปุ่มดูรายละเอียด */
+    color: white;
+    /* สีของข้อความและไอคอน */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    padding: 0;
+    /* ไม่มีการเพิ่มระยะขอบภายใน */
+    width: 35px;
+    /* กว้าง */
+    height: 35px;
+    /* สูง */
+    display: flex;
+    /* ใช้ flexbox ในการจัดตำแหน่งเนื้อหา */
+    align-items: center;
+    /* จัดให้อยู่กลางแนวตั้ง */
+    justify-content: center;
+    /* จัดให้อยู่กลางแนวนอน */
+    cursor: pointer;
+    /* ทำให้เมื่อเอาเมาส์ไปวางจะเปลี่ยนรูปร่างเป็นมือชี้ */
+
+}
+.btn-add{
+    border-radius: 6px;
+    background-color: #00a1ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto; /* ให้ปุ่มเคลื่อนไปทางขวา */
+    font-weight: bold;
+}
+
+.btn-check {
+    border-radius: 6px;
+    /* กำหนดความโค้งมนของขอบ */
+    background-color: #15c559;
+    /* สีฟ้าอ่อนสำหรับปุ่มดูรายละเอียด */
+    color: white;
+    /* สีของข้อความและไอคอน */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    padding: 0;
+    /* ไม่มีการเพิ่มระยะขอบภายใน */
+    width: 35px;
+    /* กว้าง */
+    height: 35px;
+    /* สูง */
+    display: flex;
+    /* ใช้ flexbox ในการจัดตำแหน่งเนื้อหา */
+    align-items: center;
+    /* จัดให้อยู่กลางแนวตั้ง */
+    justify-content: center;
+    /* จัดให้อยู่กลางแนวนอน */
+    cursor: pointer;
+    /* ทำให้เมื่อเอาเมาส์ไปวางจะเปลี่ยนรูปร่างเป็นมือชี้ */
+
+}
+.btn-cancle {
+    border-radius: 6px;
+    /* กำหนดความโค้งมนของขอบ */
+    background-color: #797979;
+    /* สีฟ้าอ่อนสำหรับปุ่มดูรายละเอียด */
+    color: white;
+    /* สีของข้อความและไอคอน */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    padding: 0;
+    /* ไม่มีการเพิ่มระยะขอบภายใน */
+    width: 100px;
+    /* กว้าง */
+    height: 35px;
+    /* สูง */
+    display: flex;
+    /* ใช้ flexbox ในการจัดตำแหน่งเนื้อหา */
+    align-items: center;
+    /* จัดให้อยู่กลางแนวตั้ง */
+    justify-content: center;
+    /* จัดให้อยู่กลางแนวนอน */
+    cursor: pointer;
+    /* ทำให้เมื่อเอาเมาส์ไปวางจะเปลี่ยนรูปร่างเป็นมือชี้ */
+
+}
+.delete-icon {
+    font-weight: bold;
+    font-size: 25px;
+    /* ขนาดไอคอน */
+
+}
+
+.delete-icon,
+.uil {
+    font-size: 20px;
+    /* ขนาดไอคอน */
+}
+
+.uil {
+    color: inherit;
+    /* ให้สีไอคอนตรงกับสีของปุ่ม */
+}
+
+/* Optional: Add hover effects for better user interaction */
+.btn-edit:hover,
+.btn-check:hover,
+.btn-detail:hover,
+.btn-delete:hover {
+    opacity: 80%;
+}
+.btn-cancle:focus,
+.btn-check:focus,
+.btn-add:focus,
+.btn-edit:focus,
+.btn-delete:focus,
+.btn-detail:focus {
+    outline: none;
+    /* ยกเลิกการแสดง outline เมื่อปุ่มถูกโฟกัส */
+    box-shadow: none;
+    /* อาจต้องการยกเลิก box shadow ถ้ามีการใช้งาน */
+}
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons {
+    text-align: right;
+    padding-top: 20px;
+
+}
+/* Optional: Add hover effects for better user interaction */
+
+.search-btn {
+    background-color: transparent; /* กำหนดให้พื้นหลังเป็นโปร่งใส */
+    border: none; /* กำหนดให้ไม่มีเส้นขอบ */
+    cursor: pointer; /* กำหนดให้เป็น cursor ที่เหมาะสมสำหรับปุ่ม */
+    padding: 0; /* กำหนดให้ไม่มีการเพิ่มพื้นที่เสริมภายในปุ่ม */
+    width: 40px; /* กำหนดความกว้างของปุ่ม */
+    height: 40px; /* กำหนดความสูงของปุ่ม */
+    font-size: 24px; /* กำหนดขนาดตัวอักษรของไอคอนในปุ่ม */
+
+}
+
+/* ลบเส้นขอบเมื่อมีการคลิก */
+.search-btn:active,
+.search-btn:focus {
+    outline: none;
+}
+
+/* ลบเส้นขอบเมื่อมีการโฮเวอร์ */
+.search-btn:hover {
+    outline: none;
+}
+.uil-search-alt {
+    font-size: 24px; /* กำหนดขนาดของไอคอนใหญ่ขึ้น */
+    cursor: pointer; /* กำหนดเป็น cursor ที่เหมาะสมสำหรับการคลิก */
+    margin-left: 5px;
+    color: #00a1ff;
+}
+.buttons .button-cancle{
+    background-color: #e0342a;
+}
+/* Optional: Add hover effects for better user interaction */
+.buttons .button-cancle:hover
+{
+    opacity: 80%;
+}
+.buttons .btn-cancle:focus
+ {
+    outline: none;
+    /* ยกเลิกการแสดง outline เมื่อปุ่มถูกโฟกัส */
+    box-shadow: none;
+    /* อาจต้องการยกเลิก box shadow ถ้ามีการใช้งาน */
+}
+
+.buttons .button-c{
+    background-color: #e0342a;
+}
+/* Optional: Add hover effects for better user interaction */
+.buttons .button-c:hover
+{
+    opacity: 80%;
+}
+.buttons .btn-c:focus
+ {
+    outline: none;
+    /* ยกเลิกการแสดง outline เมื่อปุ่มถูกโฟกัส */
+    box-shadow: none;
+    /* อาจต้องการยกเลิก box shadow ถ้ามีการใช้งาน */
+}
+
+.buttons .button-add{
+    background-color: #00a1ff;
+}
+/* Optional: Add hover effects for better user interaction */
+.buttons .button-add:hover
+{
+    opacity: 80%;
+}
+.buttons .button-add:focus
+ {
+    outline: none;
+    /* ยกเลิกการแสดง outline เมื่อปุ่มถูกโฟกัส */
+    box-shadow: none;
+    /* อาจต้องการยกเลิก box shadow ถ้ามีการใช้งาน */
+}
+.buttons .button-com{
+    background-color: #5cb85c;
+}
+/* Optional: Add hover effects for better user interaction */
+.buttons .button-com:hover
+{
+    opacity: 80%;
+}
+.buttons .button-com:focus
+ {
+    outline: none;
+    /* ยกเลิกการแสดง outline เมื่อปุ่มถูกโฟกัส */
+    box-shadow: none;
+    /* อาจต้องการยกเลิก box shadow ถ้ามีการใช้งาน */
+}
+.buttons .button-no{
+    background-color: #b0b0b0;
+}
+/* Optional: Add hover effects for better user interaction */
+.buttons .button-no:hover
+{
+    opacity: 80%;
+}
+.buttons .btn-no:focus
+ {
+    outline: none;
+    /* ยกเลิกการแสดง outline เมื่อปุ่มถูกโฟกัส */
+    box-shadow: none;
+    /* อาจต้องการยกเลิก box shadow ถ้ามีการใช้งาน */
+}
+input:focus {
+    outline: #00a1ff; /* ไม่แสดงเส้น outline เมื่อได้รับโฟกัส */
+    box-shadow: 0 0 3px #00a1ff; /* เพิ่มเงาให้กับ input เมื่อได้รับโฟกัส */
+}
+
+textarea:focus {
+    outline: #00a1ff; /* ไม่แสดงเส้น outline เมื่อได้รับโฟกัส */
+    box-shadow: 0 0 3px #00a1ff; /* เพิ่มเงาให้กับ input เมื่อได้รับโฟกัส */
+}
+select:focus {
+    outline: #00a1ff; /* ไม่แสดงเส้น outline เมื่อได้รับโฟกัส */
+    box-shadow: 0 0 3px #00a1ff; /* เพิ่มเงาให้กับ input เมื่อได้รับโฟกัส */
+}

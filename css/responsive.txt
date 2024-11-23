@@ -1,0 +1,856 @@
+@media (min-width: 480px) and (max-width: 640px) {
+    /* .top */
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .taskwrapper {
+        margin-left: 0;
+    }
+    
+    nav.close {
+        width: 73px;
+    }
+
+    nav~.dashboard {
+        display: none;
+        width: 100%;
+    }
+
+    
+    /* เพิ่มอนิเมชันให้กับ .dashboard */
+    nav.close~.dashboard {
+        left: 73px;
+        width: calc(100% - 73px);
+        display: block;
+        opacity: 1; /* เพิ่มความโปร่งใสให้แสดงผลเป็นบางส่วนของอนิเมชัน */
+        transition: left 0.5s ease; /* เพิ่มอนิเมชันให้กับ left */
+    }
+
+    nav~.dashboard .top {
+        left: 0;
+        width: 100%;
+        transition: left 0.5s ease; /* เพิ่มอนิเมชันให้กับ left */
+
+    }
+
+    nav.close~.dashboard .top {
+        left: 0;
+        width: 100%;
+    }
+    .top{
+        max-width: 100%;
+    }
+    .username{
+        font-size: 18px;
+    }
+/* //////////////////Dashboard////////////////////////////// */
+    /* Carlendar */
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .wrapper header {
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        padding: 25px 30px 10px;
+        justify-content: space-between;
+    }
+
+    header .current-date {
+        margin-top: 8px;
+        font-size: 1.2rem;
+    }
+
+    header .icons {
+        margin-bottom: 5px;
+    }
+
+    .calendar {
+        width: 100%;
+    }
+
+    .calendar .weeks li {
+        font-size: 0.85rem;
+
+    }
+
+    .calendar .days {
+        font-size: 0.85rem;
+
+    }
+
+    .calendar .days li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .days li::before {
+        margin-bottom: 5px;
+    }
+
+    .days li.inactive {
+        margin-top: 5px
+    }
+
+    /* taskBoard */
+    .taskwrapper {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        padding: 20px;
+        margin-top: 15px
+    }
+
+    .col-lg-6 .taskwrapper {
+        width: 100%;
+        margin-left: 1px;
+    }
+
+    header .text {
+        /* align-items: center; */
+ 
+        display: flex;
+        justify-content: center;        
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .filter-btn {}
+
+    .task-box li {
+        font-size: 14px;
+    }
+    .task-box li span{
+        font-size: 14px;
+        margin-top: 2px;
+    }
+
+    .controls {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+    }
+
+    /* Table */
+    .his-table {
+        font-family: 'Poppins', sans-serif;
+        max-width: 100%;
+        border-radius: 10px; /* กำหนดมุมโค้งทั้งหมด */
+        /* ตารางจะขยายตามขนาดของพื้นที่ที่มีให้ */
+        background: #FFF;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* ใช้ auto ทั้งสองข้างเพื่อจัดกลางตาราง */
+        box-sizing: border-box;
+        /* ให้การคำนวณขนาดตารางรวม padding และ border */
+    }
+    
+    .his-table table {
+        background-color: #00a1ff;
+    }
+    .his-table th:first-child {
+        text-align: left;
+        margin-left: 5px;
+        width: 100px;
+        color: #FFF;
+        font-size: 14px;
+    }
+    .his-table td:first-child{
+        font-size: 12px;
+        width:200px
+
+    }
+    .his-table th
+    {
+        text-align: center;
+        padding: 12px 16px;
+        color: #FFF;
+        font-size: 14px;
+        width:200px
+    }
+    .his-table td {
+        background-color: #FFF;
+        padding: 12px 16px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .his-table thead {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    
+    .his-table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    .his-table th:last-child {
+        max-width: 160px;
+        /* ปรับขนาดคอลัมน์ Action */
+    }
+    .arrow-h p{
+        font-size: 18px;
+    }
+    .arrow p{
+        font-size: 18px;
+    }
+    .d-table {
+        font-family: 'Poppins', sans-serif;
+        max-width: 100%;
+        border-radius: 10px; /* กำหนดมุมโค้งทั้งหมด */
+        /* ตารางจะขยายตามขนาดของพื้นที่ที่มีให้ */
+        background: #FFF;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* ใช้ auto ทั้งสองข้างเพื่อจัดกลางตาราง */
+        box-sizing: border-box;
+        /* ให้การคำนวณขนาดตารางรวม padding และ border */
+    }
+    
+    .d-table table {
+        background-color: #00a1ff;
+    }
+    .d-table th:first-child {
+        text-align: left;
+        margin-left: 5px;
+        width: 150px;
+        color: #FFF;
+    }
+    .d-table td:first-child {
+        text-align: left;
+        margin-left: 5px;
+  
+    }
+    .d-table th
+    {
+        text-align: center;
+        background-color: #00a1ff;
+        padding: 12px 16px;
+        color: #FFF;
+        width:200px
+    }
+    .d-table td {
+        background-color: #FFF;
+        padding: 12px 16px;
+        text-align: center;
+
+    }
+
+    .d-table thead {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    
+    .d-table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+    .latest-info{
+        font-size: 12px;
+    }
+    .latest-info-h{
+        font-size: 12px;
+        margin-top:50px;
+        margin-bottom: 5px;
+    }
+    .task-table {
+        font-family: 'Poppins', sans-serif;
+        max-width: 100%;
+        border-radius: 10px; /* กำหนดมุมโค้งทั้งหมด */
+        /* ตารางจะขยายตามขนาดของพื้นที่ที่มีให้ */
+        background: #FFF;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* ใช้ auto ทั้งสองข้างเพื่อจัดกลางตาราง */
+        box-sizing: border-box;
+        /* ให้การคำนวณขนาดตารางรวม padding และ border */
+    }
+    
+    .task-table table {
+        background-color: #00a1ff;
+    }
+    .task-table th:first-child {
+        text-align: left;
+        margin-left: 5px;
+        width: 100px;
+        color: #FFF;
+        font-size: 14px;
+    }
+    .task-table td:first-child{
+        font-size: 12px;
+        width:200px
+
+    }
+    .task-table th
+    {
+        text-align: center;
+        background-color: #00a1ff;
+        padding: 12px 16px;
+        color: #FFF;
+        font-size: 14px;
+        width:200px
+    }
+    .task-table td {
+        background-color: #FFF;
+        padding: 12px 16px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .task-table thead {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    
+    .task-table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    .task-table th:last-child {
+        max-width: 160px;
+        /* ปรับขนาดคอลัมน์ Action */
+    }
+    
+    /* //////////////////task////////////////////////////// */
+    .dash-content .title .text{
+        font-size: 16px;
+
+    }
+    label{
+        font-size: 14px;
+    }
+
+    .input-search{
+        max-width: 60%;
+    }
+
+    .latest-info-t{
+        margin-top: 50px;
+        font-size: 12px;
+    }
+    .btn-add{
+        max-width: 20%;
+    }
+    .sr{
+        margin-left:-15px;
+    }
+
+    /* buttun */
+    .action-buttons{
+
+    }
+    .btn-detail{
+        width: 30%;
+        height: 10%;
+    }
+    .btn-edit{
+        width: 30%;
+        height: 10%;
+    }
+    .btn-delete{
+        width: 30%;
+        height: 10%;
+    }
+
+    /*//////////////////////Modal*//* Animation/////////////// */
+/* CSS สำหรับปรับแต่งหัวข้อใหญ่และตัวหนา */
+.modalbox {
+    overflow: auto; /* เพิ่ม scrollbar เมื่อเนื้อหาใน modal มีขนาดใหญ่เกินไป */
+    max-height: 360px; /* กำหนดความสูงสูงสุดของ modal */
+    max-width: 640px; /* กำหนดความกว้างสูงสุดของ modal */
+}
+.modalbox .title {
+    font-size: 20px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวหนา */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+.latest-info-task{
+    font-size: 10px;
+}
+}
+@media (min-width: 641px) and (max-width: 960px) {
+    /* .top */
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .taskwrapper {
+        margin-left: 0;
+    }
+    
+    nav.close {
+        width: 73px;
+    }
+
+    nav~.dashboard {
+        display: none;
+        width: 100%;
+    }
+
+    
+    /* เพิ่มอนิเมชันให้กับ .dashboard */
+    nav.close~.dashboard {
+        left: 73px;
+        width: calc(100% - 73px);
+        display: block;
+        opacity: 1; /* เพิ่มความโปร่งใสให้แสดงผลเป็นบางส่วนของอนิเมชัน */
+        transition: left 0.5s ease; /* เพิ่มอนิเมชันให้กับ left */
+    }
+
+    nav~.dashboard .top {
+        left: 0;
+        width: 100%;
+        transition: left 0.5s ease; /* เพิ่มอนิเมชันให้กับ left */
+
+    }
+
+    nav.close~.dashboard .top {
+        left: 0;
+        width: 100%;
+    }
+    .top{
+        max-width: 100%;
+    }
+    .username{
+        font-size: 18px;
+    }
+/* //////////////////Dashboard////////////////////////////// */
+    /* Carlendar */
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .wrapper header {
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        padding: 25px 30px 10px;
+        justify-content: space-between;
+    }
+
+    header .current-date {
+        margin-top: 8px;
+        font-size: 1.2rem;
+    }
+
+    header .icons {
+        margin-bottom: 5px;
+    }
+
+    .calendar {
+        width: 100%;
+    }
+
+    .calendar .weeks li {
+        font-size: 0.85rem;
+
+    }
+
+    .calendar .days {
+        font-size: 0.85rem;
+
+    }
+
+    .calendar .days li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .days li::before {
+        margin-bottom: 5px;
+    }
+
+    .days li.inactive {
+        margin-top: 5px
+    }
+
+    /* taskBoard */
+    .taskwrapper {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        padding: 20px;
+        margin-top: 15px
+    }
+
+    .col-lg-6 .taskwrapper {
+        width: 100%;
+        margin-left: 1px;
+    }
+
+    header .text {
+        /* align-items: center; */
+ 
+        display: flex;
+        justify-content: center;        
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .filter-btn {}
+
+    .task-box li {
+        font-size: 14px;
+    }
+    .task-box li span{
+        font-size: 14px;
+        margin-top: 2px;
+    }
+
+    .controls {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+    }
+
+    /* Table */
+    .his-table {
+        font-family: 'Poppins', sans-serif;
+        max-width: 100%;
+        border-radius: 10px; /* กำหนดมุมโค้งทั้งหมด */
+        /* ตารางจะขยายตามขนาดของพื้นที่ที่มีให้ */
+        background: #FFF;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* ใช้ auto ทั้งสองข้างเพื่อจัดกลางตาราง */
+        box-sizing: border-box;
+        /* ให้การคำนวณขนาดตารางรวม padding และ border */
+    }
+    
+    .his-table table {
+        background-color: #00a1ff;
+    }
+    .his-table th:first-child {
+        text-align: left;
+        margin-left: 5px;
+        width: 100px;
+        color: #FFF;
+        font-size: 14px;
+    }
+    .his-table td:first-child{
+        font-size: 12px;
+        width:200px
+
+    }
+    .his-table th
+    {
+        text-align: center;
+        padding: 12px 16px;
+        color: #FFF;
+        font-size: 14px;
+        width:200px
+    }
+    .his-table td {
+        background-color: #FFF;
+        padding: 12px 16px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .his-table thead {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    
+    .his-table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    .his-table th:last-child {
+        max-width: 160px;
+        /* ปรับขนาดคอลัมน์ Action */
+    }
+    .arrow-h p{
+        font-size: 18px;
+    }
+    .arrow p{
+        font-size: 18px;
+    }
+    .d-table {
+        font-family: 'Poppins', sans-serif;
+        max-width: 100%;
+        border-radius: 10px; /* กำหนดมุมโค้งทั้งหมด */
+        /* ตารางจะขยายตามขนาดของพื้นที่ที่มีให้ */
+        background: #FFF;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* ใช้ auto ทั้งสองข้างเพื่อจัดกลางตาราง */
+        box-sizing: border-box;
+        /* ให้การคำนวณขนาดตารางรวม padding และ border */
+    }
+    
+    .d-table table {
+        background-color: #00a1ff;
+    }
+    .d-table th:first-child {
+        text-align: left;
+        margin-left: 5px;
+        width: 150px;
+        color: #FFF;
+    }
+    .d-table td:first-child {
+        text-align: left;
+        margin-left: 5px;
+  
+    }
+    .d-table th
+    {
+        text-align: center;
+        background-color: #00a1ff;
+        padding: 12px 16px;
+        color: #FFF;
+        width:200px
+    }
+    .d-table td {
+        background-color: #FFF;
+        padding: 12px 16px;
+        text-align: center;
+
+    }
+
+    .d-table thead {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    
+    .d-table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+    .latest-info{
+        font-size: 12px;
+    }
+    .latest-info-h{
+        font-size: 12px;
+        margin-top:50px;
+        margin-bottom: 5px;
+    }
+    .task-table {
+        font-family: 'Poppins', sans-serif;
+        max-width: 100%;
+        border-radius: 10px; /* กำหนดมุมโค้งทั้งหมด */
+        /* ตารางจะขยายตามขนาดของพื้นที่ที่มีให้ */
+        background: #FFF;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* ใช้ auto ทั้งสองข้างเพื่อจัดกลางตาราง */
+        box-sizing: border-box;
+        /* ให้การคำนวณขนาดตารางรวม padding และ border */
+    }
+    
+    .task-table table {
+        background-color: #00a1ff;
+    }
+    .task-table th:first-child {
+        text-align: left;
+        margin-left: 5px;
+        width: 100px;
+        color: #FFF;
+        font-size: 14px;
+    }
+    .task-table td:first-child{
+        font-size: 12px;
+        width:200px
+
+    }
+    .task-table th
+    {
+        text-align: center;
+        background-color: #00a1ff;
+        padding: 12px 16px;
+        color: #FFF;
+        font-size: 14px;
+        width:200px
+    }
+    .task-table td {
+        background-color: #FFF;
+        padding: 12px 16px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .task-table thead {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    
+    .task-table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    .task-table th:last-child {
+        max-width: 160px;
+        /* ปรับขนาดคอลัมน์ Action */
+    }
+    
+    /* //////////////////task////////////////////////////// */
+    .dash-content .title .text{
+        font-size: 16px;
+
+    }
+    label{
+        font-size: 14px;
+    }
+
+    .input-search{
+        max-width: 60%;
+    }
+
+    .latest-info-t{
+        margin-top: 50px;
+        font-size: 12px;
+    }
+    .btn-add{
+        max-width: 20%;
+    }
+    .sr{
+        margin-left:-15px;
+    }
+
+    /* buttun */
+    .action-buttons{
+
+    }
+    .btn-detail{
+        width: 30%;
+        height: 10%;
+    }
+    .btn-edit{
+        width: 30%;
+        height: 10%;
+    }
+    .btn-delete{
+        width: 30%;
+        height: 10%;
+    }
+
+    /*//////////////////////Modal*//* Animation/////////////// */
+/* CSS สำหรับปรับแต่งหัวข้อใหญ่และตัวหนา */
+.modalbox {
+    overflow: auto; /* เพิ่ม scrollbar เมื่อเนื้อหาใน modal มีขนาดใหญ่เกินไป */
+    max-height: 360px; /* กำหนดความสูงสูงสุดของ modal */
+    max-width: 640px; /* กำหนดความกว้างสูงสุดของ modal */
+}
+.modalbox .title {
+    font-size: 20px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวหนา */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+.latest-info-task{
+    font-size: 10px;
+}
+}
+
+@media (max-width: 1000px) {
+    .taskwrapper {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        padding: 20px;
+        margin-top: 15px
+    }
+
+    .col-lg-6 .taskwrapper {
+        width: 100%;
+        margin-left: 1px;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+    .col-lg-6 {
+        width: 100%;
+    }
+
+    .dash-content .boxes .box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .taskwrapper {
+        margin-left: 0;
+    }
+
+    nav {
+        width: 0px;
+    }
+
+    nav.close {
+        width: 73px;
+    }
+
+    nav .logo_name {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+    nav li a .link-name {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    nav~.dashboard {
+        left: 0;
+        width: 100%;
+    }
+
+    nav.close~.dashboard {
+        left: 73px;
+        width: calc(100% - 73px);
+    }
+
+    nav~.dashboard .top {
+        left: 0;
+        width: 100%;
+    }
+
+    nav.close~.dashboard .top {
+        left: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,161 @@
+/* Animation */
+@keyframes showModal {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* CSS สำหรับแสดงโมดัล */
+/* Overlay */
+/* Overlay styles */
+.overlay {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* ครอบคลุมทั้งหน้าจอด้วยพื้นหลังกึ่งโปร่งใส */
+    display: flex;
+    justify-content: center; /* จัดตำแหน่งแนวนอนให้อยู่กลาง */
+    align-items: center; /* จัดตำแหน่งแนวตั้งให้อยู่กลาง */
+    z-index: 1050; /* ให้มีค่า z-index สูงเพื่อให้อยู่เหนือส่วนอื่นๆ */
+}
+
+.modalbox {
+    animation: showModal 0.3s ease forwards; /* เพิ่ม animation เมื่อโมดัลปรากฎ */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1051; /* สูงกว่า overlay */
+    width: 90%; /* หรือตามที่ต้องการ */
+    max-width: 600px; /* กำหนดขนาดสูงสุด */
+}
+/* CSS สำหรับปรับแต่งหัวข้อใหญ่และตัวหนา */
+.modalbox .title {
+    font-size: 24px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวหนา */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+/* CSS เพื่อสร้างเส้นขั้นหัวข้อ */
+.title-container {
+    position: relative; /* ตำแหน่งเป็น relative เพื่อทำให้สามารถใช้งาน position:absolute ในต่อไป */
+}
+
+.line {
+    position: absolute;
+    top: 40px; /* ปรับตำแหน่งให้เส้นขั้นหัวข้ออยู่ที่ตำแหน่งที่ต้องการ */
+    width: 100%;
+    border-bottom: 2px solid #ccc; /* เส้นขั้นหัวข้อ */
+}
+
+/* CSS for Close Button */
+.close-btn {
+    position: absolute;
+    top: 5px; /* ตำแหน่งด้านบน */
+    right: 15px; /* ตำแหน่งด้านขวา */
+    font-size: 35px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.close-btn:focus {
+    outline: none;
+}
+/* สไตล์ของฟอร์ม */
+#editTaskForm input,
+#editTaskForm select,
+#editTaskForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#editTaskForm textarea {
+    height: 100px;
+}
+.editTaskForm input:focus {
+    outline: #00a1ff;
+}
+
+#addTaskForm input,
+#addTaskForm select,
+#addTaskForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#addTaskForm textarea {
+    height: 100px;
+}
+.addTaskForm input:focus {
+    outline: #00a1ff;
+}
+
+#viewTaskForm input,
+#viewTaskForm select,
+#viewTaskForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#viewTaskForm textarea {
+    height: 100px;
+}
+.viewTaskForm input:focus {
+    outline: #00a1ff;
+}
+
+#viewForm input,
+#viewForm select,
+#viewForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#viewForm textarea {
+    height: 100px;
+}
+.viewForm input:focus {
+    outline: #00a1ff;
+}
+#settingForm input,
+#settingForm select,
+#settingForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#settingForm textarea {
+    height: 100px;
+}
+.settingForm input:focus {
+    outline: #00a1ff;
+}
+
